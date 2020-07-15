@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/chatonline_item_imgl"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chatonline_item_txtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="100dp"
+        android:autoLink="web"
+        android:background="#999999"
+        android:lineSpacingExtra="2dp"
+        android:maxEms="20"
+        android:padding="16dp"
+        android:singleLine="false"
+        android:textColor="#111111"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/chatonline_item_pad"
+        app:layout_constraintStart_toEndOf="@+id/chatonline_item_imgl"
+        app:layout_constraintTop_toTopOf="@+id/chatonline_item_imgl" />
+
+    <ImageView
+        android:id="@+id/chatonline_item_imgr"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+    <TextView
+        android:id="@+id/chatonline_item_txtr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:autoLink="web"
+        android:background="#999999"
+        android:gravity="left"
+        android:lineSpacingExtra="2dp"
+        android:maxEms="20"
+        android:padding="16dp"
+        android:singleLine="false"
+        android:textColor="#111111"
+        android:textColorLink="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toTopOf="@+id/chatonline_item_pad"
+        app:layout_constraintEnd_toStartOf="@+id/chatonline_item_imgr"
+        app:layout_constraintTop_toTopOf="@+id/chatonline_item_imgr" />
+
+    <View
+        android:id="@+id/chatonline_item_pad"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
